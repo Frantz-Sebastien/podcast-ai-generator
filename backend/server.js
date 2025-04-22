@@ -14,7 +14,7 @@ if (!process.env.GOOGLE_CLOUD_API_KEY) {
   process.exit(1); // Stop the server if API key is missing
 }
 
-const app = express();
+const app = require("./app")
 const PORT = 4000;
 
 // Middleware
